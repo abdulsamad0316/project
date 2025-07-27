@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Assets/Css/Wild-Wood-Zoo-Home-Style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/Assets/Css/Wild-Wood-Zoo-AboutUs-Style.css">
+    <link rel="stylesheet" href="/Assets/Css/Wild-Wood-Zoo-Animals-Style.css">
+    <link rel="stylesheet" href="/Assets/Css/Wild-Wood-Zoo-ContactUs-Style.css">
+    <link rel="stylesheet" href="/Assets/Css/Wild-Wood-Zoo-Events-Style.css">
+    <title>Wild Wood Zoo--Home</title>
+</head>
+
+<body>
+    <div class="container2">
+
+
+        <!-- PAGE 1 -->
+
+
+        <div class="page1">
+
+
+            <!-- HEADER SECTION START -->
+
+
+            <header class="header">
+                <div class="navbar">
+                    <div class="logo-sec">
+                        <a href="Wild-Wood-Zoo-Home.html">
+                            <img src="../Assets/Images/logo2.png" alt="">
+                        </a>
+                    </div>
+                    <ul class="list-sec">
+                        <li><a href="/Web-Pages/Wild-Wood-Zoo-Animals.html">Animals</a></li>
+                        <li><a href="/Web-Pages/Wild-Wood-Zoo-Events.html">Events</a></li>
+                        <li><a href="/Web-Pages/Wild-Wood-Zoo-AboutUs.html">About Us</a></li>
+                        <li><a href="/Web-Pages/Wild-Wood-Zoo-ContactUs.html">Contact Us</a></li>
+                    </ul>
+                    <div class="btn-sec">
+                        <button data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Log In
+                        </button>
+                        <button data-bs-toggle="modal" data-bs-target="#signupModal">
+                            Sign Up
+                        </button>
+                        <br>
+                        <button data-bs-toggle="modal" data-bs-target="#ticketModal"
+                            style="font-size: 1.3vw; border-radius: 8px;">
+                            Buy Tickets
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!--LOGIN MODAL -->
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content"
+                        style="background: none; backdrop-filter: blur(8px); color: white; border: 2px solid white; border-radius: 20px;  box-shadow: 12px 12px 20px green;">
+                        <div class="modal-body">
+                            <h3>Log In</h3>
+                            <hr>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Username</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="username@example.com">
+                            </div>
+                            <label for="inputPassword5" class="form-label">Password</label>
+                            <input type="password" id="inputPassword5" class="form-control"
+                                aria-describedby="passwordHelpBlock"><br>
+                            <div id="passwordHelpBlock" class="form-text" style="color: white;">
+                                Don't have an account?<button data-bs-toggle="modal" data-bs-target="#signupModal"
+                                    style="background: none; color: white; border: none;"><span> Create
+                                        one</span></button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-light">Log In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--SIGNUP MODAL -->
+            <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content"
+                        style="background: none; backdrop-filter: blur(8px); color: white; border: 2px solid white; border-radius: 20px; box-shadow: 12px 12px 20px green;">
+                        <div class="modal-body">
+                            <h3>Sign Up</h3>
+                            <hr>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="enter your name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="create your email">
+                            </div>
+                            <label for="inputPassword5" class="form-label">Password</label>
+                            <input type="password" id="inputPassword5" class="form-control"
+                                aria-describedby="passwordHelpBlock" placeholder="create password"><br>
+                            <label for="inputPassword5" class="form-label">Confirm Password</label>
+                            <input type="password" id="inputPassword5" class="form-control"
+                                aria-describedby="passwordHelpBlock" placeholder="confirm your password"><br>
+                            <div id="passwordHelpBlock" class="form-text" style="color: white;">
+                                Already have an account?<button data-bs-toggle="modal" data-bs-target="#loginModal"
+                                    style="background: none; color: white; border: none;"><span> Log In</span></button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-light">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Ticket Modal -->
+            <div class="modal fade" id="ticketModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content"
+                        style="background: none; backdrop-filter: blur(8px); color: white; border: 2px solid white; border-radius: 20px; box-shadow: 12px 12px 20px green;">
+                        <div class="modal-body">
+                            <h3>You Need To Buy Tickets??</h3>
+                            <p>Fill the details below accurately we will contact you soon!!</p>
+                            <h4>Ticket Price 2500/=</h4>
+                            <hr>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="enter your full name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="enter your email">
+                            </div>
+                            <label for="inputPassword5" class="form-label">Enter Your Phone Number</label>
+                            <input type="number" id="inputnumber7" class="form-control"
+                                aria-describedby="passwordHelpBlock" placeholder="enter your phone number"><br>
+                            <label for="tickets">Number of Tickets:</label>
+                            <input type="number" id="tickets" name="tickets" min="1" required
+                                style="border-radius: 10px; margin-left: 5px;"><br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-light">Confirm Booking</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- HEADER SECTION END -->
+
+            <!-- FIRST CAROUSEL START -->
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <video class="w-100 h-100" autoplay muted loop>
+                        <source src="../Assets/Images/Animal-page-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- FIRST CAROUSEL END -->
+
+
+
+            <!-- PAGE 1 -->
+
+
+            <div class="page2">
+                <div class="overlay">
+
+
+                    <br><br><br><br><br>
+
+                    <div class="zoo-discription">
+                        <div class="zoo-dis-details">
+                            <h2>Welcome to the Wild Wood Zoo!!</h2>
+                            <p>Step into a world where nature roars, chirps, and crawls!<br>
+                                Wild Wood Zoo brings you face-to-face with exotic animals, rare species, and thrilling
+                                wildlife
+                                experiences.<br>
+                                From playful parrots to majestic big cats, every corner is full of wonder.<br>
+                                Come explore, learn, and connect with the wild like never before!</p>
+                        </div>
+                        <div class="zoo-dis-images">
+                            <img src="https://zoo.sandiegozoo.org/sites/default/files/2025-05/7629_SDZ25_WEB_NTZ-Nighttime-Zoo_Ad-Unit_780x962%402x.jpg"
+                                alt="">
+                            <img src="https://zoo.sandiegozoo.org/sites/default/files/2022-02/elephant_botswana.jpg"
+                                alt="">
+                            <img src="https://zoo.sandiegozoo.org/sites/default/files/2020-10/Ad-Hotels_0-2_1.jpg"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <br><br><br><br><br><br><br>
+
+                    <!-- DISPLAY CARD SECTION START -->
+
+                    <div class="display-crd-container">
+                        <div class="display-crd-img">
+                            <img src="../Assets/Images/lizard.png" alt="">
+                        </div>
+                        <div class="display-crd-details">
+                            <h2
+                                style="font-size: 1.9vw; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold;">
+                                Meet the Vibrant Green Lizard: Nature’s Living Jewel
+                            </h2>
+                            <p style="font-size: 1.6vw; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                                Basking in the sunlight with its striking emerald scales,<br> the green lizard is a true
+                                masterpiece
+                                of
+                                the wild. Found in lush forests and warm rocky habitats, this agile creature blends
+                                seamlessly
+                                with
+                                its surroundings. Its bright color not only stuns the eye but also plays a vital role in
+                                camouflage
+                                and communication. A perfect symbol of adaptability and beauty in nature.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- DISPLAY CARD SECTION START -->
+
+                    <br><br><br><br><br><br><br>
+
+
+                    <!-- PAGE 2 -->
+
+
+                    <!-- HEADING SECTION START -->
+
+                    <div class="heading-sec">
+                        <img src="https://i.pinimg.com/originals/4a/f6/ad/4af6add41ebc1d226f1ef0ee9c26a99b.gif" alt=""
+                            class="parrot">
+                        <img src="https://pngimg.com/d/jungle_PNG8.png" alt="" class="wood-hed">
+                        <h2 style="font-size: 2.2vw;">Amazing Birds Species</h2>
+                    </div>
+
+                    <!-- HEADING SECTION END -->
+
+
+
+                    <!-- CARD SECTION START -->
+
+                    <div class="Card-sec">
+
+                        <!--CARD ROW 1 START -->
+                        <div class="crd-row-1">
+                            <div class="crd-1">
+                                <img src="https://t3.ftcdn.net/jpg/08/70/44/60/360_F_870446024_a4GKiyjom7TfUAOFotSIJu4w3pAswtgD.png"
+                                    alt="" class="crd-img1">
+                                <img src="https://static.vecteezy.com/system/resources/previews/047/242/661/non_2x/flying-macaw-parrot-isolated-on-transparent-background-free-png.png"
+                                    alt="" class="crd-img2">
+                                <div class="crd-details">
+                                    <h2>-Macaw-</h2>
+                                    <p>Bright, long-tailed parrots with loud calls and vibrant feathers from blue, red,
+                                        green,
+                                        and
+                                        yellow.</p>
+                                </div>
+                            </div>
+
+                            <div class="crd-1">
+                                <img src="https://cdn.pixabay.com/photo/2022/08/30/07/37/peacock-7420550_1280.png"
+                                    alt="" class="crd-img1">
+                                <img src="https://png.pngtree.com/png-clipart/20241203/original/pngtree-a-full-body-peacock-with-feathers-on-transparent-background-png-image_17486528.png"
+                                    alt="" class="crd-img2">
+                                <div class="crd-details">
+                                    <h2>-Peacock-</h2>
+                                    <p>Famous for its glowing blue body and eye-spotted tail used in stunning courtship
+                                        displays.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="crd-1">
+                                <img src="https://png.pngtree.com/png-vector/20231127/ourmid/pngtree-hyper-realistic-3d-rendering-of-a-full-body-flamingo-png-image_10749139.png"
+                                    alt="" class="crd-img1">
+                                <img src="https://png.pngtree.com/png-clipart/20241114/original/pngtree-pink-flamingo-flying-in-flight-digital-illustration-clipart-png-image_17018037.png"
+                                    alt="" class="crd-img2">
+                                <div class="crd-details">
+                                    <h2>-Flamingo-</h2>
+                                    <p>Tall, pink wading bird with curved neck, standing gracefully in shallow waters on
+                                        thin
+                                        legs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--CARD ROW 1 END -->
+
+                        <br><br><br>
+
+                        <!--CARD ROW 2 START -->
+                        <div class="crd-row-1">
+                            <div class="crd-1">
+                                <img src="https://cdn.pixabay.com/photo/2022/10/26/18/26/lorikeet-portrait-7549205_1280.png"
+                                    alt="" class="crd-img1">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/053/814/783/small_2x/rainbow-lorikeet-bird-flying-in-the-air-png.png"
+                                    alt="" class="crd-img2">
+                                <div class="crd-details">
+                                    <h2>-Rainbow Lorikeet-</h2>
+                                    <p>A rainbow in flight! This Australian parrot has vibrant green, blue, red, and
+                                        yellow
+                                        feathers, and loves to feed on nectar and fruits.</p>
+                                </div>
+                            </div>
+
+                            <div class="crd-1">
+                                <img src="https://wallpapers.com/images/hd/mallard-duck-profile-gyizpuj7s9wkcbo7.jpg"
+                                    alt="" class="crd-img1">
+                                <img src="https://png.pngtree.com/png-clipart/20240325/original/pngtree-mallard-duck-goose-flying-png-image_14680344.png"
+                                    alt="" class="crd-img2">
+                                <div class="crd-details">
+                                    <h2>-Mandarin Duck-</h2>
+                                    <p>Often called the world’s most beautiful duck, the male Mandarin Duck has striking
+                                        patterns of orange, green, white, and blue — a real eye-catcher in the water.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="crd-1">
+                                <img src="https://png.pngtree.com/png-vector/20240101/ourmid/pngtree-lady-gouldian-finch-png-image_11396955.png"
+                                    alt="" class="crd-img1">
+                                <img src="https://png.pngtree.com/png-vector/20240927/ourmid/pngtree-gouldian-finch-bird-flying-oncopy-transparent-background-png-image_13919285.png"
+                                    alt="" class="crd-img2">
+                                <div class="crd-details">
+                                    <h2>-Gouldian Finch-</h2>
+                                    <p>This tiny Australian bird looks like it flew out of a paint box — with purple,
+                                        yellow, green, red, and blue feathers. It's delicate and loves to live in
+                                        groups.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--CARD ROW 2 END -->
+
+                        <br><br><br>
+
+
+
+                        <!--CARD ROW 3 START -->
+                        <div class="crd-row-1">
+                            <div class="crd-1">
+                                <img src="https://static.vecteezy.com/system/resources/previews/065/454/864/non_2x/majestic-white-owl-with-striking-eyes-perched-against-a-plain-background-free-png.png"
+                                    alt="" class="crd-img1">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/058/052/697/small_2x/majestic-snowy-owl-flying-with-wings-spread-cut-out-transparent-png.png"
+                                    alt="" class="crd-img2">
+                                <div class="crd-details">
+                                    <h2>-Spectacled Owl-</h2>
+                                    <p>With white “spectacle” markings around its eyes and a rich brown body, this owl
+                                        looks
+                                        both mysterious and majestic. It’s mostly active at night and very silent in
+                                        flight.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="crd-1">
+                                <img src="https://static.vecteezy.com/system/resources/previews/060/117/997/non_2x/beautiful-sun-conure-parrot-with-bright-orange-and-yellow-plumage-free-png.png"
+                                    alt="" class="crd-img1">
+                                <img src="https://png.pngtree.com/png-vector/20250601/ourmid/pngtree-sun-conure-parrot-in-flight-vibrant-yellow-wings-png-image_16441791.png"
+                                    alt="" class="crd-img2">
+                                <div class="crd-details">
+                                    <h2>-Sun Conure-</h2>
+                                    <p>A small but stunning parrot with fiery yellow-orange feathers and green wings.
+                                        It’s
+                                        playful, affectionate, and often found in pairs or flocks.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="crd-1">
+                                <img src="https://png.pngtree.com/png-vector/20250224/ourmid/pngtree-great-blue-turaco-bird-full-body-front-view-transparent-background-png-image_15581162.png"
+                                    alt="" class="crd-img1">
+                                <img src="https://www.turaco.ch/wp-content/uploads/2022/01/Turaco-Flying-200x155.gif"
+                                    alt="" class="crd-img2">
+                                <div class="crd-details">
+                                    <h2>-Turaco-</h2>
+                                    <p>Turacos are medium-sized birds with vibrant green, blue, and purple feathers —
+                                        colors
+                                        that come from unique natural pigments found only in this species.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--CARD ROW 1 END -->
+
+                        <br><br><br>
+
+                    </div>
+
+                    <br><br><br><br>
+
+
+                    <!-- CARD SECTION END -->
+
+
+                    <footer class="footer">
+                        <div class="footer-container">
+                            <div class="logo">
+                                <img src="../Assets/Images/logo2.png" alt="Wild Wood Zoo Logo">
+                            </div>
+                            <div class="links">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li><a href="Wild-Wood-Zoo-Home.html"
+                                            style="text-decoration: none; color: white; background-color: white; color: black; padding: 6px 6px; border: 2px solid black; border-radius: 8px;">Home</a>
+                                    </li>
+                                    <li><a href="Wild-Wood-Zoo-Animals.html"
+                                            style="text-decoration: none; color: white;">Animals</a></li>
+                                    <li><a href="Wild-Wood-Zoo-Events.html"
+                                            style="text-decoration: none; color: white;">Events</a></li>
+                                    <li><a href="Wild-Wood-Zoo-AboutUs.html"
+                                            style="text-decoration: none; color: white;">About Us</a></li>
+                                    <li><a href="#" style="text-decoration: none; color: white;">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="timings">
+                                <h3>⏰ Zoo Timings</h3>
+                                <p>You can visit Wild Wood Zoo between 9:30 AM – 5:00 PM.</p>
+                                <p>Wednesdays are reserved for women and children only.</p>
+                            </div>
+                            <div class="social">
+                                <h3>Follow Us</h3>
+                                <div class="icons">
+                                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="copyright">© 2025. Best time to visit: Early morning for animal feeding sessions.</p>
+                    </footer>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+</body>
+
+</html>

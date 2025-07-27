@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Assets/Css/Wild-Wood-Zoo-Animals-Style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <title>Wild Wood Zoo--Animals</title>
+</head>
+
+<body>
+    <div class="container2">
+
+        <!-- PAGE 1 -->
+
+
+        <div class="page1">
+
+
+            <!-- HEADER SECTION START -->
+
+
+            <header class="header">
+                <div class="navbar">
+                    <div class="logo-sec">
+                        <a href="/index.html">
+                            <img src="../Assets/Images/logo2.png" alt="">
+                        </a>
+                    </div>
+                    <ul class="list-sec">
+                        <li><a href="Wild-Wood-Zoo-Animals.html"
+                                style="background-color: white; color: black; padding: 6px 6px; border: 2px solid black; border-radius: 8px;">Animals</a>
+                        </li>
+                        <li><a href="Wild-Wood-Zoo-Events.html">Events</a></li>
+                        <li><a href="Wild-Wood-Zoo-AboutUs.html">About Us</a></li>
+                        <li><a href="Wild-Wood-Zoo-ContactUs.html">Contact Us</a></li>
+                    </ul>
+                    <div class="btn-sec">
+                        <button data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Log In
+                        </button>
+                        <button data-bs-toggle="modal" data-bs-target="#signupModal">
+                            Sign Up
+                        </button>
+                        <br>
+                        <button data-bs-toggle="modal" data-bs-target="#ticketModal"
+                            style="font-size: 1.3vw; border-radius: 8px;">
+                            Buy Tickets
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!--LOGIN MODAL -->
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content"
+                        style="background: none; backdrop-filter: blur(8px); color: white; border: 2px solid white; border-radius: 20px;  box-shadow: 12px 12px 20px green;">
+                        <div class="modal-body">
+                            <h3>Log In</h3>
+                            <hr>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Username</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="username@example.com">
+                            </div>
+                            <label for="inputPassword5" class="form-label">Password</label>
+                            <input type="password" id="inputPassword5" class="form-control"
+                                aria-describedby="passwordHelpBlock"><br>
+                            <div id="passwordHelpBlock" class="form-text" style="color: white;">
+                                Don't have an account?<button data-bs-toggle="modal" data-bs-target="#signupModal"
+                                    style="background: none; color: white; border: none;"><span> Create
+                                        one</span></button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-light">Log In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--SIGNUP MODAL -->
+            <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content"
+                        style="background: none; backdrop-filter: blur(8px); color: white; border: 2px solid white; border-radius: 20px; box-shadow: 12px 12px 20px green;">
+                        <div class="modal-body">
+                            <h3>Sign Up</h3>
+                            <hr>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="enter your name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="create your email">
+                            </div>
+                            <label for="inputPassword5" class="form-label">Password</label>
+                            <input type="password" id="inputPassword5" class="form-control"
+                                aria-describedby="passwordHelpBlock" placeholder="create password"><br>
+                            <label for="inputPassword5" class="form-label">Confirm Password</label>
+                            <input type="password" id="inputPassword5" class="form-control"
+                                aria-describedby="passwordHelpBlock" placeholder="confirm your password"><br>
+                            <div id="passwordHelpBlock" class="form-text" style="color: white;">
+                                Already have an account?<button data-bs-toggle="modal" data-bs-target="#loginModal"
+                                    style="background: none; color: white; border: none;"><span> Log In</span></button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-light">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Ticket Modal -->
+            <div class="modal fade" id="ticketModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content"
+                        style="background: none; backdrop-filter: blur(8px); color: white; border: 2px solid white; border-radius: 20px; box-shadow: 12px 12px 20px green;">
+                        <div class="modal-body">
+                            <h3>You Need To Buy Tickets??</h3>
+                            <p>Fill the details below accurately we will contact you soon!!</p>
+                            <h4>Ticket Price 2500/=</h4>
+                            <hr>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="enter your full name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="enter your email">
+                            </div>
+                            <label for="inputPassword5" class="form-label">Enter Your Phone Number</label>
+                            <input type="number" id="inputnumber7" class="form-control"
+                                aria-describedby="passwordHelpBlock" placeholder="enter your phone number"><br>
+                            <label for="tickets">Number of Tickets:</label>
+                            <input type="number" id="tickets" name="tickets" min="1" required
+                                style="border-radius: 10px; margin-left: 5px;"><br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-light">Confirm Booking</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- HEADER SECTION END -->
+
+            <!-- FIRST CAROUSEL START -->
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="height: 100vh;">
+                        <img src="../Assets/Images/carouselimage1.jpg" alt="..." class="w-100 h-100">
+                    </div>
+                    <div class="carousel-item" style="height: 100vh;">
+                        <img src="../Assets/Images/carouselimage3.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item" style="height: 100vh;">
+                        <img src="../Assets/Images/carouselimage6.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item" style="height: 100vh;">
+                        <img src="../Assets/Images/carouselimage9.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIRST CAROUSEL END -->
+
+
+            <!-- PAGE 1 -->
+
+            <!-- PAGE 2 -->
+
+            <div class="page2">
+                <div class="overlay">
+
+                    <br><br><br><br><br><br><br>
+
+                    <!-- Pricng Card Section Start -->
+                    <!-- 1 Row Start -->
+                    <div class="card-row1">
+
+                        <!-- Card 1 Start -->
+                        <div class="card1" style="width: 30%;">
+                            <img src="../Assets/Images/Award2.png" height="350px" width="100%">
+                        </div>
+                        <!-- Card 1 End -->
+
+                        <!-- Card 2 Start -->
+                        <div class="card2" style="width: 30%;">
+                            <img src="../Assets/Images/Award1.png" height="350px" width="100%">
+                        </div>
+                        <!-- Card 2 End -->
+
+                        <!-- Card 3 Start -->
+                        <div class="card3" style="width: 30%;">
+                            <img src="../Assets/Images/Award2.png" height="350px" width="100%">
+                        </div>
+                        <!-- Card 3 End -->
+                    </div>
+                    <!-- 1 Row End -->
+                    <!-- Pricng Card Section End --><br><br><br><br><br><br><br>
+
+
+
+                    <!-- CARNIVORES ANIMALS SECTION START -->
+
+                    <!-- HEADING SECTION START -->
+
+                    <h1 class="text-center fs-7" style="color: white;">Carnivores – Fierce Hunters of the Wild</h1>
+                    <p class="fs-5 text-center"
+                        style="border-bottom: 4px solid rgb(255, 255, 255); color: white; padding-bottom: 90px;"> Strong
+                        •
+                        Sharp • Fearless • Predators
+                        !</p>
+                    <br><br>
+
+                    <!-- HEADING SECTION END -->
+
+
+
+                    <!-- CARD SECTION START -->
+
+                    <!-- 1 Row Start -->
+
+                    <!-- Card 1 Start -->
+                    <div class="animal-crd-container">
+                        <div class="row gy-4" id="row1">
+                            <div class="card-ea col-lg-4 col-md-6  col-sm-12 ">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://www.sfzoo.org/wp-content/uploads/2021/03/AfricanLionJasiri_resize2019.jpg"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">- African Lion-</h5>
+                                        <p class="card-text">Known as the "King of the Jungle," lions are powerful
+                                            predators
+                                            that live in prides. With their majestic manes and mighty roar, they
+                                            symbolize
+                                            strength and leadership.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 1 End -->
+
+                            <!-- Card 2 Start -->
+                            <div class="card-ea col-lg-4 col-md-6   col-sm-12 ">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://www.tribuneindia.com/sortd-service/imaginary/v22-01/jpg/large/high?url=dGhldHJpYnVuZS1zb3J0ZC1wcm8tcHJvZC1zb3J0ZC9tZWRpYTdlMmI1MDIwLTRlNTEtMTFlZi04MTJjLTliYTA0YmVhNDc2Zi5qcGc="
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">-Bengal Tiger-</h5>
+                                        <p class="card-text">This striped big cat is native to the forests of India.
+                                            Tigers
+                                            are solitary and stealthy hunters, admired for their beauty, power, and
+                                            grace.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 End -->
+
+                            <!-- Card 3 Start -->
+                            <div class="card-ea col-lg-4 col-md-12  col-sm-12">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Canis_lupus_Stadt_Haag_zoo_02.jpg"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">-Gray Wolf (Canis lupus)-</h5>
+                                        <p class="card-text">The most widespread and well-known wolf species. Gray
+                                            wolves
+                                            are found in various habitats and are known for their pack behavior. Many
+                                            subspecies fall under this category.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 End -->
+                        </div>
+                    </div>
+                    <!-- 1 Row End --><br><br>
+
+                    <!-- 2 Row Start -->
+
+                    <!-- Card 4 Start -->
+                    <div class="animal-crd-container">
+                        <div class="row gy-4" id="row1">
+                            <div class="card-ea col-lg-4 col-md-6  col-sm-12 ">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://th-i.thgim.com/public/news/national/tamil-nadu/sq7wwg/article67522208.ece/alternates/FREE_1200/Vandalur%20Zoo-Himalayan%20black%20bear.jpeg"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">-Himalayan Black Bear-</h5>
+                                        <p class="card-text">With a thick black coat and a distinctive white chest mark,
+                                            this bear is found in forested mountains. It’s an excellent climber and
+                                            prefers
+                                            fruits, honey, and roots.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 4 End -->
+
+                            <!-- Card 5 Start -->
+                            <div class="card-ea col-lg-4 col-md-6   col-sm-12 ">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://nationalzoo.si.edu/sites/default/files/newsroom/20200804-clouded-leopard-ariel-jessicakordell-002.jpg"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">-Leopard-</h5>
+                                        <p class="card-text">Leopards are sleek, spotted hunters known for their agility
+                                            and
+                                            strength. They can drag prey up trees and blend into their surroundings with
+                                            incredible camouflage.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 5 End -->
+
+                            <!-- Card 6 Start -->
+                            <div class="card-ea col-lg-4 col-md-12  col-sm-12">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://www.toledoblade.com/image/2016/04/22/1140x_a10-7_cTC/n7croc-1.jpg"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">-Saltwater Crocodile (Crocodylus porosus)-</h5>
+                                        <p class="card-text">The largest living reptile in the world, found in Southeast
+                                            Asia and Australia.
+                                            Can live in both freshwater and saltwater.
+                                            Often kept in specialized enclosures due to their size.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 6 End -->
+                        </div>
+                    </div>
+                    <!-- 2 Row End --><br><br>
+
+                    <br><br><br><br>
+
+                    <!-- CARNIVORES ANIMALS SECTION END -->
+
+
+                    <!-- HERBIVORES ANIMALS SECTION START -->
+
+                    <!-- HEADING SECTION START -->
+
+                    <h1 class="text-center fs-7" style="color: white;">Herbivores – Gentle Plant Eaters</h1>
+                    <p class="fs-5 text-center"
+                        style="border-bottom: 4px solid rgb(255, 255, 255); color: white; padding-bottom: 90px;">
+                        Peaceful
+                        • Leafy • Calm • Grazers
+                        !</p>
+                    <br><br>
+
+                    <!-- HEADING SECTION END -->
+
+
+
+                    <!-- CARD SECTION START -->
+
+                    <!-- 3 Row Start -->
+
+                    <!-- Card 7 Start -->
+                    <div class="animal-crd-container">
+                        <div class="row gy-4" id="row1">
+                            <div class="card-ea col-lg-4 col-md-6  col-sm-12 ">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://www.indianapoliszoo.com/wp-content/uploads/2024/03/Elephants-Hero.webp"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">-African Elephant-</h5>
+                                        <p class="card-text">The gentle giant of the zoo, elephants feed on leaves,
+                                            fruits,
+                                            and bark. They are known for their intelligence and strong family bonds.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 7 End -->
+
+                            <!-- Card 8 Start -->
+                            <div class="card-ea col-lg-4 col-md-6   col-sm-12 ">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://npr.brightspotcdn.com/dims4/default/9a2c5d8/2147483647/strip/true/crop/500x400+0+0/resize/880x704!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F0f%2Fea%2Fde685f034054ad7670be418ea6f3%2Figgy-wayne-smith-seneca-park-zoo-002.jpg"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">- Masai Giraffe-</h5>
+                                        <p class="card-text">These towering animals use their long necks to munch on
+                                            treetop
+                                            leaves, especially acacia. Their calm nature makes them zoo favorites.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 8 End -->
+
+                            <!-- Card 9 Start -->
+                            <div class="card-ea col-lg-4 col-md-12  col-sm-12">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://zooatlanta.org/wp-content/uploads/zebra_firstdaybackout_ZA_7677.jpg"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">-Plains Zebra-</h5>
+                                        <p class="card-text">Zebras graze on open grasslands and use their stripes as
+                                            camouflage. They live in groups and are always watchful.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 9 End -->
+                        </div>
+                    </div>
+                    <!-- 3 Row End --><br><br>
+
+                    <!-- 4 Row Start -->
+
+                    <!-- Card 10 Start -->
+                    <div class="animal-crd-container">
+                        <div class="row gy-4" id="row1">
+                            <div class="card-ea col-lg-4 col-md-6  col-sm-12 ">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://www.oregonzoo.org/sites/default/files/2023-08/020620_mg-105.jpg"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">-Mountain Goat-</h5>
+                                        <p class="card-text">Agile and playful, mountain goats love climbing and
+                                            nibbling on
+                                            shrubs and grass. They're common in petting zoos for kids.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 10 End -->
+
+                            <!-- Card 11 Start -->
+                            <div class="card-ea col-lg-4 col-md-6   col-sm-12 ">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://brevardzoo.org/wp-content/uploads/2022/07/220728013-scaled-e1659038794762.jpg"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">-White-Tailed Deer -</h5>
+                                        <p class="card-text">Graceful and alert, deer feed on leaves, fruits, and soft
+                                            plants. Their antlers and swift movements make them fascinating.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 11 End -->
+
+                            <!-- Card 12 Start -->
+                            <div class="card-ea col-lg-4 col-md-12  col-sm-12">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://nationalzoo.si.edu/sites/default/files/styles/wide/public/paragraphs/single_image/20200914-649a2819-001rp-web.jpg?h=ba0e0ea5&itok=6MO3XwVu"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">-American Bison-</h5>
+                                        <p class="card-text">Massive and strong, bison graze across open fields. Once
+                                            endangered, they now thrive in protected zoo environments.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 12 End -->
+                        </div>
+                    </div>
+                    <!-- 4 Row End --><br><br>
+
+                    <br><br><br><br>
+
+                    <!-- HERBIVORES ANIMALS SECTION END -->
+
+
+                    <!-- AQUATIC ANIMALS SECTION START -->
+
+                    <!-- HEADING SECTION START -->
+
+                    <h1 class="text-center fs-7" style="color: white;">Aquatic Animals – Life Beneath Waves</h1>
+                    <p class="fs-5 text-center"
+                        style="border-bottom: 4px solid rgb(255, 255, 255); color: white; padding-bottom: 90px;">
+                        Graceful
+                        • Cool • Deep • Swimmers
+                        !</p>
+
+                    <!-- HEADING SECTION END -->
+
+
+
+                    <!-- CARD SECTION START -->
+
+                    <!-- 5 Row Start -->
+
+                    <!-- Card 13 Start -->
+                    <div class="animal-crd-container">
+                        <div class="row gy-4" id="row1">
+                            <div class="card-ea col-lg-4 col-md-6  col-sm-12 ">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://www.dolphinproject.com/wp-content/uploads/2016/04/IndyZoo-Dolphins_ChinaRipley_Durin-EN-870x653.jpg"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">-Bottlenose Dolphin-</h5>
+                                        <p class="card-text">Smart and playful, dolphins communicate through clicks and
+                                            whistles. They are known for their high intelligence and friendly behavior
+                                            with
+                                            trainers and visitors.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 13 End -->
+
+                            <!-- Card 14 Start -->
+                            <div class="card-ea col-lg-4 col-md-6   col-sm-12 ">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://i.ytimg.com/vi/tT-eCHhowJk/maxresdefault.jpg" class="card-img"
+                                        alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">- Green Sea Turtle-</h5>
+                                        <p class="card-text">These gentle swimmers graze on seagrass and algae. With
+                                            their
+                                            smooth shells and peaceful nature, they’re a calm presence in aquarium
+                                            exhibits.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 14 End -->
+
+                            <!-- Card 15 Start -->
+                            <div class="card-ea col-lg-4 col-md-12  col-sm-12">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Clown_Fish_in_the_Warsaw_Zoo_2010.jpg"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">-Clownfish-</h5>
+                                        <p class="card-text">Bright orange with white stripes, clownfish live in sea
+                                            anemones for protection. They're small, colorful, and loved by children and
+                                            adults alike.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 15 End -->
+                        </div>
+                    </div>
+                    <!-- 5 Row End --><br><br>
+
+                    <!-- 6 Row Start -->
+
+                    <!-- Card 16 Start -->
+                    <div class="animal-crd-container">
+                        <div class="row gy-4" id="row1">
+                            <div class="card-ea col-lg-4 col-md-6  col-sm-12 ">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://static.wikia.nocookie.net/animals/images/5/54/Image-1464520505.jpeg/revision/latest?cb=20160529111505"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">-Sand Tiger Shark-</h5>
+                                        <p class="card-text">A powerful predator with a fearsome look, yet calm in
+                                            captivity. Found in large aquarium tanks, it plays an important role in
+                                            marine
+                                            education.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 16 End -->
+
+                            <!-- Card 17 Start -->
+                            <div class="card-ea col-lg-4 col-md-6   col-sm-12 ">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://www.georgiaaquarium.org/wp-content/uploads/2018/10/sea-otter-encounter-63-1024x683.jpg"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">-Sea Otter -</h5>
+                                        <p class="card-text">Furry and active, sea otters float on their backs and crack
+                                            open shells with rocks. They are a big attraction due to their playful
+                                            habits.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 17 End -->
+
+                            <!-- Card 18 Start -->
+                            <div class="card-ea col-lg-4 col-md-12  col-sm-12">
+                                <div class="card text-bg-dark border-light" style="width: 23rem;">
+                                    <img src="https://zooinstitutes.com/img/animals/11/1134.jpg" class="card-img"
+                                        alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">-African Penguin-</h5>
+                                        <p class="card-text">These flightless birds swim gracefully underwater. Their
+                                            tuxedo-like appearance and social waddling make them a crowd favorite in
+                                            aquatic
+                                            sections of zoos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 18 End -->
+                        </div>
+                    </div>
+                    <!-- 6 Row End --><br><br>
+
+                    <br><br><br><br>
+
+                    <!-- AQUATIC ANIMALS SECTION END -->
+
+
+                    <!-- CARD SECTION END -->
+
+                    <footer class="footer">
+                        <div class="footer-container">
+                            <div class="logo">
+                                <img src="../Assets/Images/logo2.png" alt="Wild Wood Zoo Logo">
+                            </div>
+                            <div class="links">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li><a href="Wild-Wood-Zoo-Home.html"
+                                            style="text-decoration: none; color: white;">Home</a></li>
+                                    <li><a href="Wild-Wood-Zoo-Animals.html"
+                                            style="text-decoration: none; color: white; background-color: white; color: black; padding: 6px 6px; border: 2px solid black; border-radius: 8px;">Animals</a>
+                                    </li>
+                                    <li><a href="Wild-Wood-Zoo-Events.html"
+                                            style="text-decoration: none; color: white;">Events</a></li>
+                                    <li><a href="Wild-Wood-Zoo-AboutUs.html"
+                                            style="text-decoration: none; color: white;">About Us</a></li>
+                                    <li><a href="#" style="text-decoration: none; color: white;">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="timings">
+                                <h3>⏰ Zoo Timings</h3>
+                                <p>You can visit Wild Wood Zoo between 9:30 AM – 5:00 PM.</p>
+                                <p>Wednesdays are reserved for women and children only.</p>
+                            </div>
+                            <div class="social">
+                                <h3>Follow Us</h3>
+                                <div class="icons">
+                                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="copyright">© 2025. Best time to visit: Early morning for animal feeding sessions.</p>
+                    </footer>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <script>
+        </script>
+</body>
+
+</html>

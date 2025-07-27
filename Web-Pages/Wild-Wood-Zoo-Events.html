@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Assets/Css/Wild-Wood-Zoo-Events-Style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <title>Wild Wood Zoo--Events</title>
+</head>
+
+<body>
+    <div class="container2">
+
+
+        <!-- PAGE 1 -->
+
+
+        <div class="page1">
+
+
+            <!-- HEADER SECTION START -->
+
+
+            <header class="header">
+                <div class="navbar">
+                    <div class="logo-sec">
+                        <a href="/index.html">
+                            <img src="../Assets/Images/logo2.png" alt="">
+                        </a>
+                    </div>
+                    <ul class="list-sec">
+                        <li><a href="Wild-Wood-Zoo-Animals.html">Animals</a></li>
+                        <li><a href="Wild-Wood-Zoo-Events.html"
+                                style="background-color: white; color: black; padding: 6px 6px; border: 2px solid black; border-radius: 8px;">Events</a>
+                        </li>
+                        <li><a href="Wild-Wood-Zoo-AboutUs.html">About Us</a></li>
+                        <li><a href="Wild-Wood-Zoo-ContactUs.html">Contact Us</a></li>
+                    </ul>
+                    <div class="btn-sec">
+                        <button data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Log In
+                        </button>
+                        <button data-bs-toggle="modal" data-bs-target="#signupModal">
+                            Sign Up
+                        </button>
+                        <br>
+                        <button data-bs-toggle="modal" data-bs-target="#ticketModal"
+                            style="font-size: 1.3vw; border-radius: 8px;">
+                            Buy Tickets
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!--LOGIN MODAL -->
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content"
+                        style="background: none; backdrop-filter: blur(8px); color: white; border: 2px solid white; border-radius: 20px;  box-shadow: 12px 12px 20px green;">
+                        <div class="modal-body">
+                            <h3>Log In</h3>
+                            <hr>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Username</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="username@example.com">
+                            </div>
+                            <label for="inputPassword5" class="form-label">Password</label>
+                            <input type="password" id="inputPassword5" class="form-control"
+                                aria-describedby="passwordHelpBlock"><br>
+                            <div id="passwordHelpBlock" class="form-text" style="color: white;">
+                                Don't have an account?<button data-bs-toggle="modal" data-bs-target="#signupModal"
+                                    style="background: none; color: white; border: none;"><span> Create
+                                        one</span></button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-light">Log In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--SIGNUP MODAL -->
+            <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content"
+                        style="background: none; backdrop-filter: blur(8px); color: white; border: 2px solid white; border-radius: 20px; box-shadow: 12px 12px 20px green;">
+                        <div class="modal-body">
+                            <h3>Sign Up</h3>
+                            <hr>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="enter your name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="create your email">
+                            </div>
+                            <label for="inputPassword5" class="form-label">Password</label>
+                            <input type="password" id="inputPassword5" class="form-control"
+                                aria-describedby="passwordHelpBlock" placeholder="create password"><br>
+                            <label for="inputPassword5" class="form-label">Confirm Password</label>
+                            <input type="password" id="inputPassword5" class="form-control"
+                                aria-describedby="passwordHelpBlock" placeholder="confirm your password"><br>
+                            <div id="passwordHelpBlock" class="form-text" style="color: white;">
+                                Already have an account?<button data-bs-toggle="modal" data-bs-target="#loginModal"
+                                    style="background: none; color: white; border: none;"><span> Log In</span></button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-light">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Ticket Modal -->
+            <div class="modal fade" id="ticketModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content"
+                        style="background: none; backdrop-filter: blur(8px); color: white; border: 2px solid white; border-radius: 20px; box-shadow: 12px 12px 20px green;">
+                        <div class="modal-body">
+                            <h3>You Need To Buy Tickets??</h3>
+                            <p>Fill the details below accurately we will contact you soon!!</p>
+                            <h4>Ticket Price 2500/=</h4>
+                            <hr>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="enter your full name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="enter your email">
+                            </div>
+                            <label for="inputPassword5" class="form-label">Enter Your Phone Number</label>
+                            <input type="number" id="inputnumber7" class="form-control"
+                                aria-describedby="passwordHelpBlock" placeholder="enter your phone number"><br>
+                            <label for="tickets">Number of Tickets:</label>
+                            <input type="number" id="tickets" name="tickets" min="1" required
+                                style="border-radius: 10px; margin-left: 5px;"><br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-light">Confirm Booking</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HEADER SECTION END -->
+
+            <!-- FIRST CAROUSEL START -->
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="height: 100vh;">
+                        <img src="../Assets/Images/carouselimage4.jpg" alt="..." class="w-100 h-100">
+                    </div>
+                    <div class="carousel-item" style="height: 100vh;">
+                        <img src="../Assets/Images/carouselimage5.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item" style="height: 100vh;">
+                        <img src="../Assets/Images/carouselimage9.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIRST CAROUSEL END -->
+
+            <!-- PAGE 1 -->
+
+            <!-- PAGE 2 -->
+
+            <div class="page2">
+                <div class="overlay">
+
+                    <br><br><br><br><br>
+
+
+                    <div class="events-container">
+                        <div class="events-images">
+                            <img src="https://img.freepik.com/premium-psd/world-wildlife-day-taking-action-save-endangered-species-ecosystems_1076852-10303.jpg"
+                                alt="" class="eve-img">
+                        </div>
+                        <div class="events-tag">
+                            <div class="event-logo">
+                                <img src="https://img.freepik.com/premium-psd/world-wildlife-day-taking-action-save-endangered-species-ecosystems_1076852-10303.jpg"
+                                    alt="" class="ev-logo1">
+                            </div>
+                            <div class="event-logo"><img
+                                    src="https://s28164.pcdn.co/files/Adopt-RedPanda-Plush-2024-scaled.jpg" alt=""
+                                    class="ev-logo2"></div>
+                            <div class="event-logo"><img
+                                    src="https://shjc.edu.bz/wp-content/uploads/2022/11/DSC_0447.png" alt=""
+                                    class="ev-logo3"></div>
+                            <div class="event-logo"><img
+                                    src="https://www.southeast-asia.com/wp-content/uploads/2020/04/Elephant-Feeding_STB.jpg"
+                                    alt="" class="ev-logo4"></div>
+                        </div>
+                    </div>
+
+                    <br><br><br><br><br>
+
+
+                    <!-- DISPLAY CARD SECTION 1 START -->
+
+                    <div class="display-crd-container">
+                        <div class="display-crd-img">
+                            <img src="https://img.freepik.com/premium-psd/world-wildlife-day-taking-action-save-endangered-species-ecosystems_1076852-10303.jpg"
+                                alt="">
+                        </div>
+                        <div class="display-crd-details">
+                            <h2
+                                style="font-size: 1.9vw; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold;">
+                                World Wildlife Day
+                            </h2>
+                            <p style="font-size: 1.6vw; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                                On World Wildlife Day, our zoo organizes interactive educational talks, wildlife
+                                conservation exhibits, and live animal shows to raise awareness about endangered species
+                                and the importance of protecting biodiversity. Visitors of all ages can learn how they
+                                can contribute to saving the wild.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- DISPLAY CARD SECTION 1 END -->
+
+                    <br><br><br><br><br><br><br>
+
+                    <!-- DISPLAY CARD SECTION 2 START -->
+
+                    <div class="display-crd-container">
+                        <div class="display-crd-details">
+                            <h2
+                                style="font-size: 1.9vw; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold;">
+                                Adopt an Animal Drive
+                            </h2>
+                            <p style="font-size: 1.6vw; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                                This unique program allows visitors to symbolically adopt a zoo animal and support its
+                                care and enrichment. By participating, donors help cover food, medical care, and habitat
+                                improvement while receiving special certificates and updates on their adopted animal.
+                            </p>
+                        </div>
+                        <div class="display-crd-img">
+                            <img src="https://s28164.pcdn.co/files/Adopt-RedPanda-Plush-2024-scaled.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- DISPLAY CARD SECTION 2 END -->
+
+                    <br><br><br><br><br><br><br>
+
+                    <!-- DISPLAY CARD SECTION 3 START -->
+
+                    <div class="display-crd-container">
+                        <div class="display-crd-img">
+                            <img src="https://shjc.edu.bz/wp-content/uploads/2022/11/DSC_0447.png" alt="">
+                        </div>
+                        <div class="display-crd-details">
+                            <h2
+                                style="font-size: 1.9vw; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold;">
+                                Zoo Clean-Up Campaign
+                            </h2>
+                            <p style="font-size: 1.6vw; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                                Our Zoo Clean-Up Campaign invites volunteers and nature lovers to help us maintain clean
+                                and healthy enclosures for the animals. This hands-on initiative not only improves the
+                                environment but also fosters a sense of responsibility and connection to wildlife.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- DISPLAY CARD SECTION 3 END -->
+
+                    <br><br><br><br><br><br><br>
+
+                    <!-- DISPLAY CARD SECTION 4 START -->
+
+                    <div class="display-crd-container">
+                        <div class="display-crd-details">
+                            <h2
+                                style="font-size: 1.9vw; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold;">
+                                Animal Feeding Sessions
+                            </h2>
+                            <p style="font-size: 1.6vw; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                                Feeding sessions offer a close-up experience where visitors can watch zookeepers feed
+                                animals while learning about their diets, behavior, and habitat needs. These sessions
+                                are both educational and exciting, especially for kids and families.
+                            </p>
+                        </div>
+                        <div class="display-crd-img">
+                            <img src="https://www.southeast-asia.com/wp-content/uploads/2020/04/Elephant-Feeding_STB.jpg"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <!-- DISPLAY CARD SECTION 4 END -->
+
+                    <br><br><br><br><br><br><br>
+
+
+                    <footer class="footer">
+                        <div class="footer-container">
+                            <div class="logo">
+                                <img src="../Assets/Images/logo2.png" alt="Wild Wood Zoo Logo">
+                            </div>
+                            <div class="links">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li><a href="Wild-Wood-Zoo-Home.html"
+                                            style="text-decoration: none; color: white;">Home</a></li>
+                                    <li><a href="Wild-Wood-Zoo-Animals.html"
+                                            style="text-decoration: none; color: white;">Animals</a></li>
+                                    <li><a href="Wild-Wood-Zoo-Events.html"
+                                            style="text-decoration: none; color: white; background-color: white; color: black; padding: 6px 6px; border: 2px solid black; border-radius: 8px;">Events</a>
+                                    </li>
+                                    <li><a href="Wild-Wood-Zoo-AboutUs.html"
+                                            style="text-decoration: none; color: white;">About Us</a></li>
+                                    <li><a href="#" style="text-decoration: none; color: white;">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="timings">
+                                <h3>⏰ Zoo Timings</h3>
+                                <p>You can visit Wild Wood Zoo between 9:30 AM – 5:00 PM.</p>
+                                <p>Wednesdays are reserved for women and children only.</p>
+                            </div>
+                            <div class="social">
+                                <h3>Follow Us</h3>
+                                <div class="icons">
+                                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="copyright">© 2025. Best time to visit: Early morning for animal feeding sessions.
+                        </p>
+                    </footer>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <script src="../Assets/JS/Wild-Wood-Zoo-Events.js"></script>
+</body>
+
+</html>

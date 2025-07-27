@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wild Wood Zoo--About Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../Assets/Css/Wild-Wood-Zoo-AboutUs-Style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="page1">
+
+
+    <!-- HEADER SECTION START -->
+
+
+    <header class="header">
+      <div class="navbar">
+        <div class="logo-sec">
+          <a href="/index.html">
+            <img src="../Assets/Images/logo2.png" alt="">
+          </a>
+        </div>
+        <ul class="list-sec">
+          <li><a href="Wild-Wood-Zoo-Animals.html">Animals</a></li>
+          <li><a href="Wild-Wood-Zoo-Events.html">Events</a></li>
+          <li><a href="Wild-Wood-Zoo-AboutUs.html"
+              style="background-color: white; color: black; padding: 6px 6px; border: 2px solid black; border-radius: 8px;">About
+              Us</a></li>
+          <li><a href="Wild-Wood-Zoo-ContactUs.html">Contact Us</a></li>
+        </ul>
+        <div class="btn-sec">
+          <button data-bs-toggle="modal" data-bs-target="#loginModal">
+            Log In
+          </button>
+          <button data-bs-toggle="modal" data-bs-target="#signupModal">
+            Sign Up
+          </button>
+          <br>
+          <button data-bs-toggle="modal" data-bs-target="#ticketModal" style="font-size: 1.3vw; border-radius: 8px;">
+            Buy Tickets
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!--LOGIN MODAL -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"
+          style="background: none; backdrop-filter: blur(8px); color: white; border: 2px solid white; border-radius: 20px;  box-shadow: 12px 12px 20px green;">
+          <div class="modal-body">
+            <h3>Log In</h3>
+            <hr>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Username</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="username@example.com">
+            </div>
+            <label for="inputPassword5" class="form-label">Password</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"><br>
+            <div id="passwordHelpBlock" class="form-text" style="color: white;">
+              Don't have an account?<button data-bs-toggle="modal" data-bs-target="#signupModal"
+                style="background: none; color: white; border: none;"><span> Create
+                  one</span></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-light">Log In</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--SIGNUP MODAL -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"
+          style="background: none; backdrop-filter: blur(8px); color: white; border: 2px solid white; border-radius: 20px; box-shadow: 12px 12px 20px green;">
+          <div class="modal-body">
+            <h3>Sign Up</h3>
+            <hr>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Name</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="create your email">
+            </div>
+            <label for="inputPassword5" class="form-label">Password</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"
+              placeholder="create password"><br>
+            <label for="inputPassword5" class="form-label">Confirm Password</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"
+              placeholder="confirm your password"><br>
+            <div id="passwordHelpBlock" class="form-text" style="color: white;">
+              Already have an account?<button data-bs-toggle="modal" data-bs-target="#loginModal"
+                style="background: none; color: white; border: none;"><span> Log In</span></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-light">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Ticket Modal -->
+    <div class="modal fade" id="ticketModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"
+          style="background: none; backdrop-filter: blur(8px); color: white; border: 2px solid white; border-radius: 20px; box-shadow: 12px 12px 20px green;">
+          <div class="modal-body">
+            <h3>You Need To Buy Tickets??</h3>
+            <p>Fill the details below accurately we will contact you soon!!</p>
+            <h4>Ticket Price 2500/=</h4>
+            <hr>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="enter your full name">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="enter your email">
+            </div>
+            <label for="inputPassword5" class="form-label">Enter Your Phone Number</label>
+            <input type="number" id="inputnumber7" class="form-control" aria-describedby="passwordHelpBlock"
+              placeholder="enter your phone number"><br>
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" id="tickets" name="tickets" min="1" required
+              style="border-radius: 10px; margin-left: 5px;"><br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-light">Confirm Booking</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- HEADER SECTION END -->
+
+    <!-- FIRST CAROUSEL START -->
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="height: 100vh;">
+          <img src="../Assets/Images/carouselimage2.jpg" alt="..." class="w-100 h-100">
+        </div>
+        <div class="carousel-item" style="height: 100vh;">
+          <img src="../Assets/Images/carouselimage7.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item" style="height: 100vh;">
+          <img src="../Assets/Images/carouselimage9.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <!-- FIRST CAROUSEL END -->
+
+  </div><br><br>
+
+
+  <section class="hero">
+    <div class="content" style="color: white; text-align: center;">
+      <h2 style="border-bottom: 2px solid white;">Wild WoodZoo</h2>
+      <p>
+        Nestled in the heart of nature, Wild Wood Zoo is a sanctuary for both animals and adventure seekers. With a
+        focus on conservation, education, and family-friendly fun, our zoo offers a unique chance to connect with
+        wildlife from around the world. From roaring lions to gentle deer, every creature here has a story to tell.
+      </p>
+      <p>
+        At Wild Wood Zoo, we believe animals deserve to live in environments that mirror their natural habitats. Our
+        spacious enclosures are designed to provide comfort, safety, and enrichment for all species. Visitors can
+        explore themed zones like the Reptile House, African Safari Trail, and Aquatic Wonders, each offering a close
+        look at nature’s most fascinating creatures.
+      </p>
+    </div><br><br>
+    <div class="images">
+      <img src="../Assets/Images/r1.jpg" alt="Zoo Trees" />
+      <img src="../Assets/Images/r2.jpg" alt="Zoo Monkeys" />
+      <img src="../Assets/Images/r6.JPG" alt="Zoo Trees" />
+      <img src="../Assets/Images/r7.jpg" alt="Zoo Trees" />
+      <img src="../Assets/Images/r8.jpg" alt="Zoo Trees" />
+      <img src="../Assets/Images/r9.jpg" alt="Zoo Trees" />
+    </div>
+  </section>
+
+  <section class="team-section">
+    <h2>Our Team Members "Section" "2502A"</h2>
+    <div class="team">
+      <div class="member" onclick="one()">
+        <h3 style="color: white; font-size: 1.8vw;">Roham</h3>
+      </div>
+      <div class="member" onclick="two()">
+        <h3 style="color: white; font-size: 1.8vw;">Hamza</h3>
+      </div>
+      <div class="member" onclick="three()">
+        <h3 style="color: white; font-size: 1.8vw;">Ibrahim</h3>
+      </div>
+    </div>
+  </section>
+
+  <div class="box">
+    <div class="overlay">
+
+      <div class="close-btn" onclick="btn2()">-X-</div>
+
+      <br><br><br>
+
+      <div class="p1">
+        <h4><b>Roham</b></h4>
+        <p>
+          <b>Volunteer Assisted in animal care, guided visitors, and supported zoo educational activities.</b>
+        </p>
+      </div>
+
+      <div class="p2">
+        <h4><b>Hamza</b></h4>
+        <p>
+          <b>Hey! My name is Hamza and I am the Creative Director of this website.
+            I design the layout, choose the colors, and make sure everything looks attractive and user-friendly.</b>
+        </p>
+      </div>
+
+      <div class="p3">
+        <h4><b>Ibrahim</b></h4>
+        <p>
+          <b>Hey! My name is Ibrahim and I am the Content & Research Manager of this website.
+            I collect all the animal information, write content,
+            and make sure everything is correct and interesting for our visitors.</b>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="logo">
+        <img src="../Assets/Images/logo2.png" alt="Wild Wood Zoo Logo">
+      </div>
+      <div class="links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="Wild-Wood-Zoo-Home.html" style="text-decoration: none; color: white;">Home</a></li>
+          <li><a href="Wild-Wood-Zoo-Animals.html" style="text-decoration: none; color: white;">Animals</a>
+          </li>
+          <li><a href="Wild-Wood-Zoo-Events.html" style="text-decoration: none; color: white;">Events</a></li>
+          <li><a href="Wild-Wood-Zoo-AboutUs.html"
+              style="text-decoration: none; color: white;  background-color: white; color: black; padding: 6px 6px; border: 2px solid black; border-radius: 8px;">About
+              Us</a></li>
+          <li><a href="#" style="text-decoration: none; color: white;">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="timings">
+        <h3>⏰ Zoo Timings</h3>
+        <p>You can visit Wild Wood Zoo between 9:30 AM – 5:00 PM.</p>
+        <p>Wednesdays are reserved for women and children only.</p>
+      </div>
+      <div class="social">
+        <h3>Follow Us</h3>
+        <div class="icons">
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© 2025. Best time to visit: Early morning for animal feeding sessions.</p>
+  </footer>
+
+  <script src="../Assets/JS/Wild-Wood-Zoo-Home.js" defer></script>
+
+
+</body>
+
+</html>
